@@ -852,18 +852,6 @@ require('lazy').setup({
       --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
     end,
   },
-  {
-    'gbprod/nord.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require('nord').setup {}
-      vim.cmd.colorscheme 'nord'
-    end,
-  },
-  install = {
-    colorscheme = { 'nord' },
-  },
 
   {
     'MeanderingProgrammer/render-markdown.nvim',
